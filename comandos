@@ -1,0 +1,11 @@
+sudo -u postgres psql -d ferreteria_db -c "
+  CREATE TABLE cliente (
+    id SERIAL PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL
+  );
+  INSERT INTO cliente (nombre) VALUES
+    ('tata'),
+    ('nona'),
+    ('saio'),
+    ('mai');
+"
